@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 3 — Math — Kaiden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kaiden</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="math.html">Math</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Math — Chapter 3</h2>
+    <p>Choose a topic area below. Opening one section closes the others. Vocabulary items inside behave the same.</p>
+
+    <div class="accordion" id="chapter-accordion">
+
+      <!-- Vocabulary -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="vocab-panel">Vocabulary</button>
+        <div class="accordion-panel" id="vocab-panel">
+          <p class="panel-intro">Click a term to expand its definition. Opening one term closes the others.</p>
+
+          <div class="nested-accordion" data-group="vocab-terms">
+
+            <!-- Term 1 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Factored Form of a Quadratic Function</button>
+              <div class="nested-panel">
+                <p>A quadratic written as <em>y = a(x − r₁)(x − r₂)</em>, where r₁ and r₂ are the zeros of the function. This form makes it easy to identify the x-intercepts and understand the graph’s symmetry.</p>
+              </div>
+            </div>
+
+            <!-- Term 2 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Root of an Equation</button>
+              <div class="nested-panel">
+                <p>A value of x that makes the equation equal to zero. In a quadratic equation, the roots correspond to the x-intercepts (zeros) of its graph.</p>
+              </div>
+            </div>
+
+            <!-- Term 3 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Standard Form of a Quadratic Function</button>
+              <div class="nested-panel">
+                <p>The general form <em>y = ax² + bx + c</em>, where a, b, and c are constants. This form is useful for identifying the direction of opening and for converting to vertex or factored form.</p>
+              </div>
+            </div>
+
+            <!-- Term 4 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Zeroes of a Relation</button>
+              <div class="nested-panel">
+                <p>The x-values where the relation crosses the x-axis, meaning y = 0. These represent the solutions to the equation when the output is zero.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Development -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="skill-panel">Skill Development</button>
+        <div class="accordion-panel" id="skill-panel">
+          <div class="section-content">
+            <h3>Skill Development — Chapter 3</h3>
+
+            <h4>1) Solving a Quadratic Equation by Graphing</h4>
+            <p>To solve a quadratic by graphing, plot its function and locate where it crosses the x-axis. These x-intercepts correspond to the equation’s zeros or roots. If the parabola doesn’t cross the axis, it has no real solutions.</p>
+
+            <h4>2) Solving a Quadratic Equation by Factoring</h4>
+            <p>Rewrite the quadratic in factored form. Then, apply the zero product property: if (x − r₁)(x − r₂) = 0, then x = r₁ or x = r₂. This is an efficient algebraic method when factoring is possible with integer or rational roots.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="application-panel">Application</button>
+        <div class="accordion-panel" id="application-panel">
+          <div class="section-content">
+            <h3>Application — Chapter 3</h3>
+            <p>
+              In quadratic applications, the zeros are crucial because they often represent meaningful real-world events, such as when an object lands, a projectile returns to the ground, or profit equals zero.
+              Understanding zeros allows us to interpret when and where key moments happen, linking mathematics to real-life behavior and predictions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Solving -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="problems-panel">Problem Solving</button>
+        <div class="accordion-panel" id="problems-panel">
+          <div class="section-content">
+            <h3>Quadratic Problem — Rock Thrown from a Cliff</h3>
+            <p>A rock is thrown from the top of a cliff on an uncharted planet. Its height above the surface is modeled by <strong>h(t) = -8t² + 10t + 25</strong>, where t is time (seconds) and h(t) is height (metres).</p>
+
+            <h4>A) When will the rock reach its maximum height?</h4>
+            <p>Since a = -8 (negative), the parabola opens downward, meaning it has a maximum point at its vertex. Using the formula <em>t = -b / (2a)</em>:</p>
+            <p class="equation"><strong>t = -10 / (2 × -8) = 10 / 16 = 0.625 seconds.</strong></p>
+
+            <h4>B) What is the maximum height?</h4>
+            <p>Substitute t = 0.625 into h(t):</p>
+            <p class="equation">
+              h(0.625) = -8(0.625)² + 10(0.625) + 25 = -8(0.3906) + 6.25 + 25 = -3.125 + 31.25 = <strong>28.125 metres</strong>.
+            </p>
+
+            <p>Therefore, the rock reaches its <strong>maximum height of 28.125 metres</strong> at <strong>t = 0.625 seconds</strong> after being thrown.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="mt-20"><a class="btn" href="math.html">Back to Chapters</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
