@@ -1,0 +1,65 @@
+/* Accordion */
+.accordion {
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background: #f0f0f0;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #e6e6e6;
+}
+
+.accordion-body {
+  display: none;
+  padding: 12px 16px;
+  background: #fff;
+}
+
+.accordion-body.open {
+  display: block;
+}
+
+.accordion-header.active {
+  background: #dfe8ff;
+}
+
+/* smooth accordion animation */
+.accordion-panel, .nested-panel, .accordion-body {
+  overflow: hidden;
+  transition: max-height 260ms ease;
+  max-height: 0;
+}
+
+/* when JS sets inline max-height and adds .open:
+   the element will expand; when .open is removed it collapses */
+.open {
+  /* no static max-height here — JS sets maxHeight inline for exact content height */
+}
+
+/* small visual tweaks for the simplified final-reflect headers */
+.accordion-header {
+  background: #f5f7fb;
+  padding: 12px 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  font-weight: 600;
+}
+.accordion-header:focus { outline: 2px solid #9fb7ff; }
