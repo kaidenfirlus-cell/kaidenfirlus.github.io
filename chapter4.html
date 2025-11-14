@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 4 — Math — Kaiden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kaiden</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="math.html">Math</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Math — Chapter 4</h2>
+    <p>Choose a topic area below. Opening one section closes the others. Vocabulary items inside behave the same.</p>
+
+    <div class="accordion" id="chapter-accordion">
+
+      <!-- Vocabulary -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="vocab-panel">Vocabulary</button>
+        <div class="accordion-panel" id="vocab-panel">
+          <p class="panel-intro">Click a term to expand its definition. Opening one term closes the others.</p>
+
+          <div class="nested-accordion" data-group="vocab-terms">
+
+            <!-- Term 1 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Completing the Square</button>
+              <div class="nested-panel">
+                <p>Completing the square is a method used to rewrite a quadratic equation in vertex form, <em>y = a(x − h)² + k</em>. It helps find the vertex and makes solving quadratics simpler by forming a perfect square trinomial.</p>
+              </div>
+            </div>
+
+            <!-- Term 2 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Discriminant</button>
+              <div class="nested-panel">
+                <p>The discriminant is the expression <em>b² − 4ac</em> from the quadratic formula. It determines how many and what type of solutions (roots) a quadratic equation has: two, one, or none (real).</p>
+              </div>
+            </div>
+
+            <!-- Term 3 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Quadratic Formula</button>
+              <div class="nested-panel">
+                <p>The quadratic formula, <em>x = (-b ± √(b² − 4ac)) / (2a)</em>, is used to find the roots of any quadratic equation. It always works, even when factoring is not possible.</p>
+              </div>
+            </div>
+
+            <!-- Term 4 -->
+            <div class="nested-item">
+              <button class="nested-toggle">Vertex Form of a Quadratic Function</button>
+              <div class="nested-panel">
+                <p>The vertex form of a quadratic is <em>y = a(x − h)² + k</em>, where (h, k) is the vertex of the parabola. It easily shows the direction of opening and maximum or minimum point.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Development -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="skill-panel">Skill Development</button>
+        <div class="accordion-panel" id="skill-panel">
+          <div class="section-content">
+            <h3>Skill Development — Chapter 4</h3>
+
+            <h4>1) Completing the Square</h4>
+            <p>
+              To complete the square, divide all terms by the coefficient of <em>x²</em> if needed. Then, take half the coefficient of x, square it, and add it inside the brackets (and balance it outside if needed). 
+              Example: <em>x² + 6x + 5 → (x + 3)² − 4</em>.
+            </p>
+
+            <h4>2) Using the Quadratic Formula</h4>
+            <p>
+              The quadratic formula solves <em>ax² + bx + c = 0</em> by substituting the coefficients into 
+              <em>x = (-b ± √(b² − 4ac)) / (2a)</em>. This works even when factoring is impossible or when roots are irrational or complex.
+            </p>
+
+            <h4>3) The Nature of Roots</h4>
+            <p>
+              The discriminant (<em>b² − 4ac</em>) reveals the nature of the roots:
+              <ul>
+                <li>If <em>b² − 4ac > 0</em>, two distinct real roots.</li>
+                <li>If <em>b² − 4ac = 0</em>, one real repeated root.</li>
+                <li>If <em>b² − 4ac < 0</em>, two complex (non-real) roots.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="application-panel">Application</button>
+        <div class="accordion-panel" id="application-panel">
+          <div class="section-content">
+            <h3>Application — Chapter 4</h3>
+            <p>
+              In quadratic applications, the vertex is important because it often represents a maximum or minimum point, key for real-world interpretation. 
+              For example, the vertex might represent the highest point of a ball’s flight, the lowest production cost, or the maximum profit achievable. 
+              Understanding the vertex helps in optimization problems, allowing predictions and decisions that lead to the best outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Solving -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="problems-panel">Problem Solving</button>
+        <div class="accordion-panel" id="problems-panel">
+          <div class="section-content">
+            <h3>Quadratic Problem — Theatre Company Profits</h3>
+
+            <p>
+              A theatre company’s profit is modeled by <strong>P(x) = -60x² + 1800x + 16500</strong>, where <em>x</em> is the ticket price in dollars.
+            </p>
+
+            <h4>A) What ticket price gives the maximum profit?</h4>
+            <p>
+              The parabola opens downward because <em>a = -60</em>. 
+              The vertex gives the maximum point: <em>x = -b / (2a)</em>.
+            </p>
+            <p class="equation">
+              x = -1800 / (2 × -60) = -1800 / -120 = 15
+            </p>
+            <p>
+              Therefore, the company should charge <strong>$15 per ticket</strong> for maximum profit.
+            </p>
+
+            <h4>B) What is the maximum profit?</h4>
+            <p>Substitute <em>x = 15</em> into P(x):</p>
+            <p class="equation">
+              P(15) = -60(15)² + 1800(15) + 16500 <br>
+              = -60(225) + 27000 + 16500 <br>
+              = -13500 + 43500 = <strong>$30,000</strong>
+            </p>
+
+            <p>
+              The maximum profit is <strong>$30,000</strong> when ticket prices are set at <strong>$15 each</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="mt-20"><a class="btn" href="math.html">Back to Chapters</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
