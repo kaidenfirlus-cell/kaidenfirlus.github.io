@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 2 — Factoring — Kaiden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kaiden</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="math.html">Math</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Math — Chapter 2: Factoring</h2>
+    <p>
+      Choose a topic area below. Opening one section closes the others. Vocabulary items inside behave the same.
+    </p>
+
+    <div class="accordion" id="chapter-accordion">
+
+      <!-- Vocabulary: only the two required items -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="vocab-panel">Vocabulary</button>
+        <div class="accordion-panel" id="vocab-panel">
+          <p class="panel-intro">Click a term to expand its definition. Opening one term closes the others.</p>
+
+          <div class="nested-accordion" data-group="vocab-terms">
+            <!-- Factor: Binomial -->
+            <div class="nested-item">
+              <button class="nested-toggle">Factor — Binomial</button>
+              <div class="nested-panel">
+                <p>
+                  A binomial is a polynomial with exactly two terms (e.g., 6x − 8, x² − 9). Factoring a binomial
+                  means expressing it as a product of simpler polynomials. Common binomial factoring patterns:
+                </p>
+                <ul>
+                  <li><strong>Common factor:</strong> e.g., 6x − 8 = 2(3x − 4).</li>
+                  <li><strong>Difference of squares:</strong> a² − b² = (a − b)(a + b). Example: x² − 9 = (x − 3)(x + 3).</li>
+                  <li><strong>Over the reals:</strong> some binomials that are not difference-of-squares may still factor into
+                    linear factors with irrational coefficients (e.g., 6x² − 8 = (√6 x − 2√2)(√6 x + 2√2)).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Factor: Trinomial -->
+            <div class="nested-item">
+              <button class="nested-toggle">Factor — Trinomial</button>
+              <div class="nested-panel">
+                <p>
+                  A trinomial is a three-term polynomial (e.g., x² + 5x + 6 or 2x² + 7x + 3). Factoring a trinomial
+                  means writing it as the product of two binomials (when possible). Typical cases:
+                </p>
+                <ul>
+                  <li><strong>Monic trinomial (a = 1):</strong> x² + bx + c -> find integers r, s with r + s = b and r·s = c,
+                    then x² + bx + c = (x + r)(x + s). Example: x² + 5x + 6 = (x + 2)(x + 3).</li>
+                  <li><strong>Non-monic trinomial (a ≠ 1):</strong> ax² + bx + c -> common techniques are the "ac-method"
+                    (split middle term), factoring by grouping, or trying integer factor pairs of a and c to find integer
+                    binomial factors.</li>
+                  <li><strong>Special trinomial forms:</strong> perfect square trinomials (a² ± 2ab + b² = (a ± b)²) and
+                    trinomials that factor by grouping.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Development -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="skill-panel">Skill Development</button>
+        <div class="accordion-panel" id="skill-panel">
+          <div class="section-content">
+            <h3>Skill Development — Factoring & Quadratic Manipulation</h3>
+
+            <h4>1) Expanding and simplifying a quadratic expression</h4>
+            <p>
+              To expand a quadratic expression, distribute and combine like terms. Example: expand (2x + 3)(x − 4).
+              First distribute: (2x)(x) + (2x)(−4) + (3)(x) + (3)(−4) = 2x² − 8x + 3x − 12. Combine like terms:
+              2x² − 5x − 12. Always collect like terms and simplify coefficients to finish.
+            </p>
+            <p class="worked">
+              <strong>Worked example:</strong> Expand and simplify (x + 2)(x + 5):
+              x·x + x·5 + 2·x + 2·5 = x² + 5x + 2x + 10 = x² + 7x + 10.
+            </p>
+
+            <h4>2) Common factoring (factoring out the greatest common factor)</h4>
+            <p>
+              Look for the greatest common factor (GCF) of all terms and factor it out. This reduces coefficients
+              and sometimes reveals simpler factoring patterns.
+            </p>
+            <p class="worked">
+              <strong>Worked example:</strong> Factor 4x² + 6x = 2(2x² + 3x) = 2x(2x + 3) if x is common to all terms.
+              Always factor out the largest quantity common to every term.
+            </p>
+
+            <h4>3) Factoring quadratics in the form x² + bx + c (monic, a = 1)</h4>
+            <p>
+              For x² + bx + c, find two numbers r and s such that r + s = b and r·s = c. Then x² + bx + c = (x + r)(x + s).
+              This is the fastest method when a = 1. If integer pairs do not exist, the trinomial may not factor over the integers.
+            </p>
+            <p class="worked">
+              <strong>Worked example:</strong> Factor x² + 7x + 10. Find r, s with r+s=7 and r·s=10 → r=2, s=5.
+              So x² + 7x + 10 = (x + 2)(x + 5).
+            </p>
+
+            <h4>4) Factoring quadratics in the form ax² + bx + c where a is not 1 (a has no common factor)</h4>
+            <p>
+              Multiple reliable methods exist:
+            </p>
+            <ul>
+              <li><strong>ac-method (split the middle term):</strong> Multiply a·c, find two numbers that multiply to a·c and add to b,
+                split bx into those two terms, and factor by grouping.</li>
+              <li><strong>Trial of factor pairs:</strong> Try integer factor pairs of a and c to guess binomial factors (useful when a and c are small).</li>
+              <li><strong>Grouping:</strong> After splitting the middle term, factor common factors from each pair to extract binomial factors.</li>
+            </ul>
+            <p class="worked">
+              <strong>Worked example:</strong> Factor 6x² + 11x + 3.
+              Compute a·c = 18. Find two numbers that multiply to 18 and add to 11 → 9 and 2.
+              Split 11x → 9x + 2x: 6x² + 9x + 2x + 3.
+              Group: (6x² + 9x) + (2x + 3) = 3x(2x + 3) + 1(2x + 3) = (2x + 3)(3x + 1).
+            </p>
+
+            <h4>5) Factoring cases (common patterns and how to recognize them)</h4>
+            <p>
+              Recognize the most common factoring cases quickly:
+            </p>
+            <ul>
+              <li><strong>Greatest common factor (always check first)</strong>: pull out GCF.</li>
+              <li><strong>Difference of squares</strong>: a² − b² = (a − b)(a + b).</li>
+              <li><strong>Perfect square trinomial</strong>: a² ± 2ab + b² = (a ± b)².</li>
+              <li><strong>Factor by grouping</strong>: useful when four-term polynomials or after you split the middle term in the ac-method.</li>
+              <li><strong>Non-integer/irrational factors</strong>: if integer factoring fails, real linear factors may still exist and involve radicals.</li>
+            </ul>
+            <p class="note">
+              Always state the domain you are allowing for coefficients (integers, rationals, reals). Over the integers or rationals
+              factoring may fail even though real factoring (using radicals) exists.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications -->
+      <div class="accordion-item">
+        <button class="accordion-toggle" data-target="application-panel">Applications</button>
+        <div class="accordion-panel" id="application-panel">
+          <div class="section-content">
+            <h3>Application — The y-intercept in quadratic applications</h3>
+            <p>
+              In quadratic applications the y-intercept (the value of y when x = 0) is often the most direct, concrete
+              starting point of a model: it represents the initial state or baseline quantity before any change occurs.
+              For example, if a quadratic models profit over different production levels, the y-intercept gives the
+              profit when production is zero (commonly a fixed cost or seed revenue). If a parabola models the height
+              of a projectile over time, the y-intercept is the height at launch time; if a quadratic models the concentration
+              of a chemical after some manufacturing step, the y-intercept can indicate the starting concentration. Because
+              the y-intercept is obtained simply by evaluating the function at 0, it is easy to check experimentally or
+              measure directly, which makes it especially valuable for sanity checks: if field measurements disagree with the
+              y-intercept the model needs revising. In policy, economics, engineering or physics contexts, the y-intercept
+              often carries physical or economic meaning (initial cost, initial height, starting population, baseline dose),
+              so it constrains what models are reasonable and ensures predictions stay anchored to reality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Solving -->
+<div class="accordion-item">
+  <button class="accordion-toggle" data-target="problems-panel">Problem Solving</button>
+  <div class="accordion-panel" id="problems-panel">
+    <div class="section-content">
+      <h3>Quadratic Problem — Rectangle with Area 6x² − 8</h3>
+
+      <p>
+        A rectangle has area <strong>A(x) = 6x² − 8</strong>. To find its dimensions, we factor the expression.
+        The greatest common factor of the terms is 2, giving <strong>6x² − 8 = 2(3x² − 4)</strong>. This immediately provides one valid pair of dimensions based on integer-polynomial factoring.
+      </p>
+
+      <p>
+        From this factorization, the rectangle can have dimensions <strong>2</strong> and <strong>3x² − 4</strong>. These represent the simplest polynomial lengths that multiply to the given area. Although other algebraic combinations exist, such as 1 × (6x² − 8), they do not offer a more meaningful geometric interpretation of the rectangle’s dimensions.
+      </p>
+
+      <p>
+        We can confirm that no integer or rational linear factors exist. Any attempt to express the quadratic as (ax + b)(cx + d) fails, because matching coefficients would require specific integer pairs that simultaneously satisfy ac = 6 and bd = −8 while eliminating the middle term. No such combination exists.
+      </p>
+
+      <p>
+        Over the real numbers, however, the quadratic does factor into linear expressions with irrational constants. A correct real factorization is <strong>(√6x − 2√2)(√6x + 2√2)</strong>. This alternative confirms that multiple dimension pairs are possible, but the only standard integer-polynomial factorization remains <strong>2</strong> and <strong>3x² − 4</strong>.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <p class="mt-20"><a class="btn" href="math.html">Back to Chapters</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
